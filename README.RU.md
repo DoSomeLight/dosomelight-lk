@@ -1,4 +1,4 @@
-# lk-frontend
+# dosomelight-lk
 
 [<div align="right">read in english</div>](./README.RU.md)
 
