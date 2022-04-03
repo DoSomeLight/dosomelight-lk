@@ -1,0 +1,22 @@
+.lk--global--user_settings {
+	display: flex;
+	background-color: transparent;
+	width: 100%;
+	height: calc(100vh - 42px - 25px - 78px);
+	flex-direction: column;
+
+	&--wrapper {
+		display: flex;
+		background-color: transparent;
+		width: 100%;
+		height: inherit;
+	}
+
+	&--settings_header {
+		display: flex;
+		background-color: #c4ffdc;
+		width: 100%;
+		min-height: auto;
+		flex-direction: row;
+	}
+}

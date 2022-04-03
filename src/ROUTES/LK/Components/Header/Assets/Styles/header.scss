@@ -1,0 +1,17 @@
+.lk--header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 42px;
+	background-color: yellow;
+	justify-content: space-between;
+
+	&--header_logo {
+		display: flex;
+		background: url('../../../../../../assets/img/DSL_logo.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 60px;
+		height: 60px;
+	}
+}

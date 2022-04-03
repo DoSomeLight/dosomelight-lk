@@ -1,0 +1,57 @@
+// Relay.stories.ts|tsx
+
+import React from 'react'
+
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+
+import Relay from 'ROUTES/Lichniy_Kabinet/Components/Devices/Relay/Relay.device'
+import { get_COOKIE_DATA } from 'APP/MODES'
+
+const {
+	pribor_ids: devs,
+	pribors_onoffline: devs_onoffline,
+	dnames,
+	pribor_types,
+	toogle_statuses: toogles,
+	cr_pribor_ids: crypted_devs,
+} = get_COOKIE_DATA()
+
+export default {
+	/* 👇 The title prop is optional.
+	 * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+	 * to learn how to generate automatic titles
+	 */
+
+	argTypes: {
+		cr_pribor_id: { defaultValue: crypted_devs[0] },
+	},
+	title: 'Example/Relay',
+	component: Relay,
+} as ComponentMeta<typeof Relay>
+
+const Template: ComponentStory<typeof Relay> = args => <Relay {...args} />
+
+export const Primary = Template.bind({})
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Primary.args = {}
+
+// export const Primary: ComponentStory<typeof Relay> = () => (
+//   <Relay
+//     cr_pribor_id={crypted_devs[0]}
+//     Relay_Toogler={(hook) => fake__Relay_Toogle({ hook, cr_pribor_id: crypted_devs[0] })}
+//     dname={dnames[0]}
+//     pribor_id={devs[0]}
+//     onoffline={devs_onoffline[0]}
+//     pribor_type={pribor_types[0]}
+//     toogle_state={toogles[0]}
+//   />
+// );
+function fake__Relay_Toogle(arg0: {
+	hook: {
+		changed_css: 'click-button' | 'click-button-on'
+		set_css: React.Dispatch<React.SetStateAction<string>>
+	}
+	cr_pribor_id: string
+}): void {
+	console.dir(arg0)
+}

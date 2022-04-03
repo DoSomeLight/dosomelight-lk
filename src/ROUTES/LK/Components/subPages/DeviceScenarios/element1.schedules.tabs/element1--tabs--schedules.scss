@@ -1,0 +1,56 @@
+@import './tab1/tab1.sch.lk.scss';
+
+.element1--tabs--schedules {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+
+	&__links {
+		display: flex;
+		width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		order: 0;
+		white-space: nowrap;
+		background-color: #0c090c;
+		justify-content: center;
+		flex-direction: row;
+
+		& > a {
+			display: inline-block;
+			text-decoration: none;
+			padding: 14px 10px;
+			text-align: center;
+			color: #ffffff;
+			width: auto;
+			border-radius: 12px;
+			margin-right: 50px;
+
+			&:hover {
+				background-color: rgba(227, 242, 253, 0.3);
+				color: white;
+			}
+		}
+	}
+
+	& > div:not(.element1--tabs--schedules__links) {
+		display: none;
+		order: 1;
+	}
+
+	& > div:target {
+		display: block;
+	}
+}
+
+.element1--tabs--schedules > #расписания:target ~ .element1--tabs--schedules__links > a[href='#расписания'],
+.element1--tabs--schedules > #таймеры:target ~ .element1--tabs--schedules__links > a[href='#таймеры'],
+.element1--tabs--schedules > #пороги:target ~ .element1--tabs--schedules__links > a[href='#пороги'] {
+	background-color: #e0ba45ad;
+	cursor: default;
+	border-radius: 12px;
+}

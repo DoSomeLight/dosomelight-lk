@@ -1,0 +1,45 @@
+.user__info__layout {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #abab06;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	&--icon {
+		width: 20%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #08ff81;
+		border-radius: 38px;
+	}
+
+	&--text {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: #ffff08;
+		border-radius: 10px;
+		padding-inline: 10px;
+
+		&--value {
+			display: flex;
+			background-color: #adad0d;
+			margin-inline: 5px;
+			padding-inline: 5px;
+			border-radius: 5px;
+			color: #ffff08;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		& > div {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+}

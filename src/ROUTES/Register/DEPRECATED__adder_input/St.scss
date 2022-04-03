@@ -1,0 +1,25 @@
+.Inputter {
+	// background: rgb(0, 193, 252);
+	// font-style: normal;
+	// color: rgb(0, 0, 0);
+	// border-radius: 4px;
+	// border-style: solid;
+	// border-color: rgb(47, 120, 255);
+	// height: 25px;
+	// padding-left: 10px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	border: 2px solid #d9d9d9;
+	margin-bottom: 10px;
+	outline: none;
+	width: 120px;
+	position: relative;
+	display: inline;
+	transition: border-color 0.2s linear;
+}
+.Inputter:focus {
+	border-color: rgb(105, 165, 255);
+	outline: none;
+}

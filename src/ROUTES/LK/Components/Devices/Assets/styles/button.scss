@@ -1,0 +1,108 @@
+.click-button {
+	background-color: #40505770;
+	background-image: url(../Img/poweroff.png);
+	// height: 202px;
+	height: 175px;
+	width: 175px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	// padding: 20px 30px;
+	//margin: 15px;
+	border-radius: 18px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	// background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center;
+
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	transition: 0.5s;
+	border-radius: 20px 20px 20px 20px;
+
+	@media (max-width: 480px) {
+		margin: 1px;
+		width: 168px;
+		align-page: center;
+		justify-content: center;
+	}
+
+	&:hover {
+		//При наведении на кнопку в выключенном состоянии
+		background-color: #69d4c069;
+		background-image: url(../Img/poweroff.png);
+		// background-size:110px;
+	}
+
+	&-on {
+		//кнопка включена
+		background-color: #afff62;
+		background-image: url(../Img/poweroff.png);
+		// height: 202px;
+		height: 175px;
+		width: 175px;
+		text-decoration: none;
+		display: inline-block;
+		color: white;
+		// padding: 20px 30px;
+		//margin: 15px;
+		border-radius: 18px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		// background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+
+		background-repeat: no-repeat;
+		background-size: 100px;
+		background-position: center;
+
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		transition: 0.5s;
+		border-radius: 20px 20px 20px 20px;
+
+		@media (max-width: 480px) {
+			margin: 1px;
+			width: 168px;
+			align-page: center;
+			justify-content: center;
+		}
+
+		&:hover {
+			//При наведении на кнопку в включенном состоянии
+			// background-size:110px;
+			// height: 202px;
+			height: 175px;
+			width: 175px;
+			text-decoration: none;
+			display: inline-block;
+			color: white;
+			// padding: 20px 30px;
+			//margin: 15px;
+			border-radius: 18px;
+			font-family: 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			// background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+
+			background-repeat: no-repeat;
+			background-size: 100px;
+			background-position: center;
+
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			transition: 0.5s;
+			border-radius: 20px 20px 20px 20px;
+
+			@media (max-width: 480px) {
+				margin: 1px;
+				width: 168px;
+				align-page: center;
+				justify-content: center;
+			}
+		}
+	}
+
+	// background-size:110px;
+}

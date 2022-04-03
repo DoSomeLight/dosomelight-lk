@@ -1,0 +1,202 @@
+@import 'ROUTES/Auth/BackStage/Assets/Styles/style.scss';
+@import 'ROUTES/Auth/Assets/Styles/labels.scss';
+@import 'ROUTES/Auth/Buttons/Assets/Styles/style.scss';
+@import 'ROUTES/Auth/TextInputs/Assets/Styles/style.scss';
+
+@import 'ROUTES/Register/style.scss';
+
+@import 'ROUTES/LK/Assets/Styles/styles.lk.scss';
+@import 'ROUTES/LK/Components/Footer/lk--footer.scss';
+@import 'ROUTES/LK/Components/Devices/Assets/styles/device--main__div.lk.scss';
+// @import 'ROUTES/LK/Components/subPages/DeviceScenarios/device--scens__plates.scss';
+// @import 'ROUTES/LK/Components/subPages/DeviceScenarios/element1.schedules.tabs/element1--tabs--schedules.scss';
+// @import 'ROUTES/LK/Components/subPages/DeviceScenarios/element3.device-notifications/device--scens--notify__settings.lk.scss';
+@import 'ROUTES/LK/Components/Devices/Assets/styles/button.scss';
+@import 'ROUTES/LK/Components/Devices/Assets/styles/lumen.scss';
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.centro {
+	text-align: center;
+	/* margin-block: auto; */
+	display: inline-block;
+	align-items: center;
+}
+
+.strs {
+	display: inline-block;
+	width: 200px;
+	margin-left: 28px;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.Input__wrapper {
+	position: relative;
+	width: 620px;
+}
+
+.paper_css {
+	// display: inline-block;
+	// position: absolute;
+	// width:100%;
+	// height:100%;
+	// background:blue;
+	display: block;
+	/* Скрыто по умолчанию */
+	position: fixed;
+	/* Оставаться на месте */
+	z-index: 1;
+	/* Сидеть на вершине */
+	padding-top: 100px;
+	/* Расположение коробки */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Полная ширина */
+	height: 100%;
+	/* Полная высота */
+	overflow: auto;
+	/* Включите прокрутку, если это необходимо */
+	background-color: rgb(0, 0, 0);
+	/* Цвет запасной вариант  */
+	background-color: rgba(0, 0, 0, 0.4);
+	/*Черный с непрозрачностью */
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.Iinput {
+	/* padding: 10px 10px 10px 26px; */
+	padding-left: 26px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	border: 2px solid #d9d9d9;
+	margin-bottom: 10px;
+	outline: none;
+	width: 100%;
+	transition: border-color 0.2s linear;
+}
+
+.input__icon {
+	display: initial;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	font-size: 25px;
+	padding-top: 8px;
+	/* right: 10px;
+  top: 12px; */
+	fill: #808080;
+	transition: fill 0.1s linear;
+	overflow: visible;
+}
+
+.Iinput:focus {
+	border-color: #f39c12;
+}
+
+.Iinput:focus + .input__icon {
+	fill: #f39c12;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-float infinite 3s ease-in-out;
+	}
+}
+
+.App-header {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+	color: rgb(112, 76, 182);
+}
+
+.App-back {
+	width: auto;
+	background-color: darkorange;
+}
+
+@keyframes App-logo-float {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+.card-container.card {
+	max-width: 350px !important;
+	padding: 40px 40px;
+}
+
+.card {
+	background-color: #f7f7f7;
+	padding: 20px 25px 30px;
+	margin: 0 auto 25px;
+	margin-top: 50px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}

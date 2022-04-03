@@ -1,0 +1,133 @@
+.lumen {
+	background-color: #40505770;
+	background-image: url(../Img/lumen_off.png);
+	// height: 202px;
+	height: 143px;
+	width: 175px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	// padding: 20px 30px;
+	//margin: 15px;
+	border-radius: 18px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	// background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center;
+
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	transition: 0.5s;
+
+	@media (max-width: 480px) {
+		margin: 1px;
+		width: 168px;
+		align-page: center;
+		justify-content: center;
+	}
+
+	border-radius: 20px 20px 20px 20px;
+}
+
+// .lumen:hover {
+//   //При наведении на кнопку в выключенном состоянии
+//   background-color: #aef3244f;
+//   // background-image: url(lumen_on.png);
+
+//   // background-size:110px;
+// }
+
+.lumen-on {
+	//кнопка включена
+	// background-color: #afff62;
+	background-color: #40505770;
+	background-position: center;
+
+	background-image: url(../Img/lumen_on.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+
+	height: 143px;
+	width: 175px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	// padding: 20px 30px;
+	//margin: 15px;
+	border-radius: 18px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	transition: 0.5s;
+
+	@media (max-width: 480px) {
+		margin: 1px;
+		width: 168px;
+		align-page: center;
+		justify-content: center;
+	}
+
+	// .lumen-on:hover{
+	//   background-color: #3e3f3c;
+	// }
+
+	border-radius: 20px 20px 20px 20px;
+	// background-size:110px;
+}
+
+.lumen-mode {
+	width: 25px;
+	height: 25px;
+	background-image: url(../Img/mode.png);
+	background-size: 24px;
+	background-repeat: no-repeat;
+	margin-right: 30px; // border-radius: 1px 50px 1px 50px;
+	margin-left: 30px; // border-radius: 1px 50px 1px 50px;
+}
+
+.lumen-mode:hover {
+	filter: brightness(0) invert(1);
+}
+
+.lumen-settings {
+	width: 25px;
+	height: 25px;
+	background-image: url(../Img/settings.png);
+	background-size: 24px;
+	background-repeat: no-repeat;
+}
+
+.lumen-settings:hover {
+	filter: brightness(0) invert(1);
+}
+
+.lumen-music {
+	width: 25px;
+	height: 25px;
+	background-image: url(../Img/music.png);
+	// filter: brightness(0) invert(1);
+
+	background-size: 24px;
+	background-repeat: no-repeat;
+	margin-right: 0; // border-radius: 1px 50px 1px 50px;
+}
+
+.lumen-music:hover {
+	filter: brightness(0) invert(1);
+}
+
+.buttons {
+	justify-content: center;
+	display: flex;
+}
+
+.lumen-bottom {
+	// display:inline-block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}

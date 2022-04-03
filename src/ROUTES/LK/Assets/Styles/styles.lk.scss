@@ -1,0 +1,1411 @@
+@import 'ROUTES/LK/Layouts/Body/Background__Wrapper/Assets/Styles/lk--background__wrapper.scss';
+@import 'ROUTES/LK/Layouts/Body/Background__Wrapper/MAINdiv/Assets/styles/lk--DEVICE__CELL.scss';
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	// background-color: #c8d6e6;
+	/*background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Proton-K-Zarya.jpg/800px-Proton-K-Zarya.jpg');*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.toast {
+	height: 98px;
+	max-width: 550px;
+	overflow: hidden;
+	font-size: 0.875rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.25rem;
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	display: none;
+}
+
+.toast_go_toall {
+	bottom: -43px;
+	/*max-width: 800px;*/
+	right: 0px;
+	overflow: hidden;
+	font-size: 0.875rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.25rem;
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	display: none;
+
+	/* visibility: hidden; */
+	position: absolute;
+}
+
+.toast_go_toall_show {
+	display: block;
+
+	-webkit-animation: fadeInFromNone 0.6s ease-out;
+	-moz-animation: fadeInFromNone 0.6s ease-out;
+	-o-animation: fadeInFromNone 0.6s ease-out;
+	animation: fadeInFromNone 0.6s ease-out;
+}
+
+.toast:not(:last-child) {
+	margin-bottom: 0.75rem;
+}
+
+.toast_show {
+	display: block;
+
+	-webkit-animation: fadeInFromNone 0.5s ease-out;
+	-moz-animation: fadeInFromNone 0.5s ease-out;
+	-o-animation: fadeInFromNone 0.5s ease-out;
+	animation: fadeInFromNone 0.5s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+.toast_remove {
+	-webkit-animation: fadeOutFromNone 0.6s ease-out;
+	-moz-animation: fadeOutFromNone 0.6s ease-out;
+	-o-animation: fadeOutFromNone 0.6s ease-out;
+	animation: fadeOutFromNone 0.6s ease-out;
+	/* display: none; */
+}
+
+@-webkit-keyframes fadeOutFromNone {
+	0% {
+		display: block;
+		opacity: 1;
+	}
+
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes fadeOutFromNone {
+	0% {
+		display: block;
+		opacity: 1;
+	}
+
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}
+
+@-o-keyframes fadeOutFromNone {
+	0% {
+		display: block;
+		opacity: 1;
+	}
+
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOutFromNone {
+	0% {
+		display: block;
+		opacity: 1;
+	}
+
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}
+
+.toast__header {
+	/*width: 250px;*/
+	display: flex;
+	align-items: center;
+	padding: 0.25rem 1rem 0.25rem 0.75rem;
+	color: #212529;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	position: relative;
+}
+
+.toast__header_gtall {
+	max-width: 500px;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	padding: 0.25rem 1rem 0.25rem 0.75rem;
+	color: #212529;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-clip: padding-box;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	position: relative;
+}
+
+.toast__close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	float: right;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 0.6;
+	margin: 0;
+	font-family: inherit;
+	border-radius: 0;
+}
+
+.toast__body {
+	padding: 0.75rem;
+	white-space: pre;
+}
+
+@keyframes bouncing-loader {
+	to {
+		opacity: 0.1;
+		transform: translate3d(0, -5px, 0);
+	}
+}
+
+.bouncing-loader {
+	display: flex;
+	justify-content: center;
+}
+
+.bouncing-loader > div {
+	width: 12px;
+	height: 12px;
+	margin-top: 8px;
+	background: #8385aa;
+	border-radius: 50%;
+	animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncing-loader > div:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+.r2 {
+	font-size: 18px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.r1 {
+	margin: 0;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 5px;
+}
+
+.r3 {
+	display: inline-block;
+}
+
+.r {
+	background-color: #728f8b;
+	color: #fff;
+	min-width: 230px;
+	text-align: center;
+	border-radius: 0px;
+	flex-direction: column;
+	display: flex;
+	border-color: #000000;
+	border-width: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 5px;
+}
+
+.grey_block {
+	background-color: #6c8787;
+	color: #fff;
+	min-width: 230px;
+	text-align: center;
+	border-radius: 0px;
+
+	border-color: #000000;
+	border-width: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 5px;
+}
+
+.rl {
+	width: 150px;
+}
+
+.lefter {
+	border-color: #000000;
+	border-width: 1px;
+	background-color: #8dcc81d9;
+	width: 240px;
+	margin: 10px;
+	display: inline-block;
+}
+
+body {
+	text-align: center;
+	margin: 0px;
+	/*background: linear-gradient(to top, #3fb8d4,#c4e2f2);*/
+	opacity: 0.97;
+	// background-image: url(/assets/img/back.png);
+}
+
+.gradient {
+	/* background: #fefcea; Для старых браузров */
+	background: #6a8e68;
+	/* padding: 10px; */
+	border: 1px solid #007539;
+}
+
+/*header{*/
+/* Включаем режим Flexbox. */
+/*	display: flex; */
+
+/* Распределяем элементы внутри шапки */
+/*	justify-content: space-between;*/
+
+/* Выравниваем элементы вертикально по центру. */
+/*	align-items: right;*/
+/*}*/
+/*@media (max-width: 1000px){*/
+/*  header{*/
+/* Меняем оси шапки, делая её вертикальной. */
+/*    flex-direction: column;*/
+
+/* Выравнивание элементов шапки с начала (по левому краю). */
+/*    align-items: flex-start;*/
+/*  }*/
+/*}*/
+
+/* The Modal (background) */
+.modal {
+	z-index: 1;
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place   z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: visible;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Black w/ opacity */
+	-webkit-animation-name: fadeIn;
+	/* Fade in the background */
+	-webkit-animation-duration: 0.2s;
+	animation-name: fadeIn;
+	animation-duration: 0.2s;
+	text-align: center;
+}
+
+.modal-content::-webkit-scrollbar {
+	width: 0;
+}
+
+/* Modal Content */
+.modal-content {
+	text-align: center;
+
+	/*bottom:20px;*/
+	background-color: #fefefe;
+
+	overflow: auto;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.2s;
+	animation-name: slideIn;
+	animation-duration: 0.2s;
+
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	/* ширина и высота 2 блока */
+	width: 500px;
+	height: 60%;
+
+	/* Значения определяются в зависимости от его размера */
+	/* margin-left = - width / 2 */
+	margin-left: -250px;
+	/* margin-top = - height / 2 */
+
+	/*margin-right: -100%;*/
+	/*transform: translate(50%);*/
+
+	/* -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-iteration-count: once;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*-webkit-animation-duration: 2.5s;   */
+	/*animation-name: slideOut;*/
+	/*animation-iteration-count: once;*/
+	/*animation-timing-function: ease-out;*/
+	/*animation-duration: 2.5s;*/
+	/*-webkit-animation-fill-mode: forwards;*/
+	/*animation-fill-mode: forwards;*/
+
+	/*  -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-duration: 0.2s;*/
+	/*animation-name: slideOut;*/
+	/*animation-duration: 0.2s;*/
+
+	border-radius: 0px;
+
+	/*margin-right: -50%;*/
+	/*transform: translate( 50%)*/
+}
+
+/* The Close Button */
+.close {
+	color: white;
+
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 0px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+.modal-body {
+	text-align: center;
+	padding: 2px 16px;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+/* The Modal (background) */
+.scen_modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	//background-color: rgba(0, 0, 0, 0.2);
+	/* Black w/ opacity */
+	-webkit-animation-name: fadeIn;
+	/* Fade in the background */
+	-webkit-animation-duration: 0.2s;
+	animation-name: fadeIn;
+	animation-duration: 0.2s;
+	text-align: center;
+}
+
+/* Modal Content */
+.scen-content {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 100%;
+	max-width: 100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.2s;
+	animation-name: slideIn;
+	animation-duration: 0.2s;
+
+	/* -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-iteration-count: once;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*-webkit-animation-duration: 2.5s;   */
+	/*animation-name: slideOut;*/
+	/*animation-iteration-count: once;*/
+	/*animation-timing-function: ease-out;*/
+	/*animation-duration: 2.5s;*/
+	/*-webkit-animation-fill-mode: forwards;*/
+	/*animation-fill-mode: forwards;*/
+
+	/*  -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-duration: 0.2s;*/
+	/*animation-name: slideOut;*/
+	/*animation-duration: 0.2s;*/
+
+	border-radius: 0px;
+
+	/*margin-right: -50%;*/
+	/*transform: translate( 50%)*/
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.scen-header {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+.scen-body {
+	text-align: center;
+	padding: 2px 16px;
+}
+
+.scen-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+/* The Modal (background) */
+.settings_modal {
+	display: none;
+	/* Hidden by default */
+	/*position: fixed;*/
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Black w/ opacity */
+	-webkit-animation-name: fadeIn;
+	/* Fade in the background */
+	-webkit-animation-duration: 0.2s;
+	animation-name: fadeIn;
+	animation-duration: 0.2s;
+	text-align: center;
+}
+
+/* Modal Content */
+.settings-content {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 100%;
+	max-width: 100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.2s;
+	animation-name: slideIn;
+	animation-duration: 0.2s;
+
+	/* -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-iteration-count: once;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*-webkit-animation-duration: 2.5s;   */
+	/*animation-name: slideOut;*/
+	/*animation-iteration-count: once;*/
+	/*animation-timing-function: ease-out;*/
+	/*animation-duration: 2.5s;*/
+	/*-webkit-animation-fill-mode: forwards;*/
+	/*animation-fill-mode: forwards;*/
+
+	/*  -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-duration: 0.2s;*/
+	/*animation-name: slideOut;*/
+	/*animation-duration: 0.2s;*/
+
+	border-radius: 0px;
+
+	/*margin-right: -50%;*/
+	/*transform: translate( 50%)*/
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.settings-header {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+.settings-body {
+	text-align: center;
+	padding: 2px 16px;
+}
+
+.settings-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+/* The Modal (background) */
+.devs_modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Black w/ opacity */
+	-webkit-animation-name: fadeIn;
+	/* Fade in the background */
+	-webkit-animation-duration: 0.2s;
+	animation-name: fadeIn;
+	animation-duration: 0.2s;
+	text-align: center;
+}
+
+/* Modal Content */
+.devs-content {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 100%;
+	max-width: 100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.2s;
+	animation-name: slideIn;
+	animation-duration: 0.2s;
+
+	/* -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-iteration-count: once;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*-webkit-animation-duration: 2.5s;   */
+	/*animation-name: slideOut;*/
+	/*animation-iteration-count: once;*/
+	/*animation-timing-function: ease-out;*/
+	/*animation-duration: 2.5s;*/
+	/*-webkit-animation-fill-mode: forwards;*/
+	/*animation-fill-mode: forwards;*/
+
+	/*  -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-duration: 0.2s;*/
+	/*animation-name: slideOut;*/
+	/*animation-duration: 0.2s;*/
+
+	border-radius: 0px;
+
+	/*margin-right: -50%;*/
+	/*transform: translate( 50%)*/
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.devs-header {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+.devs-body {
+	text-align: center;
+	padding: 2px 16px;
+}
+
+.devs-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+/* The Modal (background) */
+.events_modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Black w/ opacity */
+	-webkit-animation-name: fadeIn;
+	/* Fade in the background */
+	-webkit-animation-duration: 0.2s;
+	animation-name: fadeIn;
+	animation-duration: 0.2s;
+	text-align: center;
+}
+
+/* Modal Content */
+.events-content {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 550px;
+	max-width: 50%;
+	height: 90%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.2s;
+	animation-name: slideIn;
+	animation-duration: 0.2s;
+
+	/* -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-iteration-count: once;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*-webkit-animation-duration: 2.5s;   */
+	/*animation-name: slideOut;*/
+	/*animation-iteration-count: once;*/
+	/*animation-timing-function: ease-out;*/
+	/*animation-duration: 2.5s;*/
+	/*-webkit-animation-fill-mode: forwards;*/
+	/*animation-fill-mode: forwards;*/
+
+	/*  -webkit-animation-name: slideOut;*/
+	/*-webkit-animation-duration: 0.2s;*/
+	/*animation-name: slideOut;*/
+	/*animation-duration: 0.2s;*/
+
+	border-radius: 0px;
+
+	/*margin-right: -50%;*/
+	/*transform: translate( 50%)*/
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.events-header {
+	padding: 2px 10px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+.events-body {
+	text-align: center;
+	padding: 2px 16px;
+}
+
+.events-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+	from {
+		bottom: -300px;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		bottom: -300px;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.setting_button {
+	font-variant: JIS78;
+	position: absolute;
+	font-size: 50px;
+	margin-top: 10px;
+	margin-left: 70px;
+
+	border: none;
+}
+
+a:active,
+a:focus {
+	outline: none;
+}
+
+input,
+textarea {
+	outline: none;
+	color: white;
+}
+
+input:active,
+textarea:active {
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+textarea {
+	resize: horizontal;
+}
+
+.vis_off {
+	display: none;
+}
+
+.vis_off_c {
+	display: none;
+}
+
+.switcher--div {
+	display: block;
+}
+
+// .switch-btn {
+//     display: block;
+//     width: 52px;
+//     /* ширина */
+//     height: 18px;
+//     /* высота */
+//     border-radius: 19px;
+//     /* радиус скругления */
+//     background: #bfbfbf;
+//     /* цвет фона */
+//     z-index: 0;
+//     margin: 5px;
+//     padding: 5px;
+//     top: 5%;
+//     border: none;
+//     cursor: pointer;
+//     position: relative;
+//     transition-duration: 300ms;
+//     /* анимация */
+// }
+
+// .switch-btn::after {
+//     content: "";
+//     height: 12px;
+//     /* высота кнопки */
+//     width: 12px;
+//     /* ширина кнопки */
+//     border-radius: 17px;
+//     background: #fff;
+//     /* цвет кнопки */
+//     top: 3px;
+//     /* положение кнопки по вертикали относительно основы */
+//     left: 3px;
+//     /* положение кнопки по горизонтали относительно основы */
+//     transition-duration: 300ms;
+//     /* анимация */
+//     position: absolute;
+//     z-index: 1;
+// }
+
+// .switch-on {
+//     background: white;
+// }
+
+// .switch-on::after {
+//     left: 37px;
+// }
+
+.offlined {
+	border-radius: 0px;
+
+	border-color: #000000;
+	border-width: 1px;
+	background-color: #698889c9;
+	width: 15em;
+	margin: 5px;
+	display: inline-block;
+	width: 240;
+}
+
+.onlined {
+}
+
+.status_on {
+	// background-image: url(/assets/img/online.png);
+	background-repeat: no-repeat;
+	background-size: 13px;
+	background-position: 2%;
+	/* background-color: #b6ffb6; */
+	margin: 4px;
+	margin-bottom: 0px;
+	font-size: 88%;
+	border-radius: 0px;
+
+	text-align: center;
+	/*width: 230px;*/
+	color: #e3ff15;
+}
+
+.status_off {
+	// background-image: url(/assets/img/offline.png);
+	background-repeat: no-repeat;
+	background-size: 13px;
+	background-position: 2%;
+	/* background-color: #777777; */
+	margin: 5px;
+	font-size: 88%;
+	border-radius: 0px;
+
+	text-align: center;
+	/*width: 230px;*/
+	color: d8ff96;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.for_data {
+	/* background-color: #0987d6; */
+	/* color: #fff; */
+	/* width: 20px; */
+	text-align: center;
+	border-radius: 0px;
+
+	border-color: #000000;
+	border-width: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 5px;
+	min-height: 37px;
+}
+
+.temp_cell {
+	/* background-color: #c33aa33d; */
+	/* border-radius: 0px; */
+	color: #edff6d;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 1px;
+	width: 70px;
+}
+
+.hum_cell {
+	/* background-color: #c33aa33d; */
+	/* border-radius: 0px; */
+
+	color: #edff6d;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 1px;
+	width: 70px;
+}
+
+/*</style>*/
+
+/*<style>*/
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: #000000a6;
+	padding: 5px 2px;
+	flex: right 1;
+	text-align: right;
+}
+
+.wrap-logo {
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	/* background-color: #0f2330ad; */
+	color: #fff569;
+	border-radius: 11px;
+	margin-left: 15px;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+header a.logo {
+	font-size: 20px;
+	font-weight: bold;
+	position: static;
+}
+
+header a:hover {
+	background-color: #fbc02d;
+	color: #212121;
+}
+
+header a.active {
+	background-color: #fbc02d;
+}
+
+nav {
+	padding-top: 5px;
+
+	display: flex;
+	align-items: right;
+}
+
+@media screen and (max-width: 660px) {
+	header a.sp {
+		display: none;
+	}
+
+	.modal-content {
+		left: 0%;
+		top: 40%;
+		/* ширина и высота 2 блока */
+		width: 100%;
+		height: 60%;
+		margin-left: 0px;
+	}
+}
+
+.dropbtn {
+	background-color: #7ddc9c30;
+	color: #cef47b;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #fbc02d;
+}
+
+.dropdown {
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 220px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	right: 0;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+img.logo-image {
+	max-width: 150;
+	object-fit: contain;
+}
+
+.switch-btn {
+	display: inline-block;
+	width: 65px;
+	/* ширина */
+	height: 33px;
+	/* высота */
+	border-radius: 19px;
+	/* радиус скругления */
+	background: #bfbfbf;
+	/* цвет фона */
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: solid;
+	border-width: 2.5px;
+	border-color: #65706c;
+	cursor: pointer;
+	position: relative;
+	transition-duration: 150ms;
+	/* анимация */
+}
+
+.switch-btn::after {
+	content: '';
+	height: 25px;
+	/* высота кнопки */
+	width: 25px;
+	/* ширина кнопки */
+	border-radius: 17px;
+	background: #ffe8af;
+	/* цвет кнопки */
+	top: 1.5px;
+	/* положение кнопки по вертикали относительно основы */
+	left: 3px;
+
+	/* положение кнопки по горизонтали относительно основы */
+	transition-duration: 150ms;
+	/* анимация */
+	position: absolute;
+	z-index: 1;
+}
+
+.switch-on {
+	background: #1cac78;
+	border: solid;
+	border-width: 2.5px;
+	border-color: #026340;
+}
+
+.switch-on::after {
+	left: 34px;
+}
+
+.up_btn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #fafafa;
+	padding: 6px 16px;
+	/*left:50%;*/
+	display: block;
+	text-decoration: none;
+	border-radius: 3px;
+	box-shadow: 0px 6px #27ae60;
+	background: #2ecc71;
+}
+
+.up_btn:hover {
+	background: #36d479;
+}
+
+.up_btn:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0px 0px #23a33d;
+	background: #23a33d;
+}
+
+.raz {
+	position: relative;
+	width: 8px;
+}
+
+.raz span {
+	position: absolute;
+	bottom: 0;
+	left: 3px;
+	right: 3px;
+	opacity: 0.5;
+	visibility: hidden;
+	transition: 0.2s;
+	text-align: center;
+}
+
+.raz input:placeholder-shown ~ span {
+	visibility: visible;
+	font-size: 20px;
+	padding-top: 6px;
+}
+
+.raz input:placeholder-shown:focus ~ span,
+.raz input:not(:placeholder-shown) ~ span {
+	bottom: 150%;
+	opacity: 1;
+	font-size: 90%;
+	visibility: visible;
+}
+
+input[type='text'] {
+	/* padding-top: 6px; */
+	/* padding-bottom: 9px; */
+	text-align: center;
+	/* margin-top: 10px; */
+	/* padding-left: 6.2px; */
+	font-size: 20px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+.settings_menu {
+	margin: auto;
+}
+
+// .hide<%=index %>,
+// .hide<%=index %>+label~.tabbl {
+//     display: none;
+
+// }
+
+// .hide<%=index %>:checked+label+.tabbl {
+//     display: inline-block;
+
+// }
+
+.rightt {
+	text-align: center;
+}
+
+.ch-btn {
+	display: inline-block;
+	width: 47px;
+	/* ширина */
+	height: 11px;
+	/* высота */
+	border-radius: 19px;
+	/* радиус скругления */
+	background: #bfbfbf;
+	/* цвет фона */
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: solid;
+	border-width: 2.5px;
+	border-color: #65706c;
+	cursor: pointer;
+	position: relative;
+	transition-duration: 150ms;
+	/* анимация */
+}
+
+.ch-btn::after {
+	content: '';
+	height: 7px;
+	/* высота кнопки */
+	width: 7px;
+	/* ширина кнопки */
+	border-radius: 17px;
+	background: #ffe8af;
+	/* цвет кнопки */
+	top: 2.1px;
+	/* положение кнопки по вертикали относительно основы */
+	left: 2.1px;
+	/* положение кнопки по горизонтали относительно основы */
+	transition-duration: 150ms;
+	/* анимация */
+	position: absolute;
+	z-index: 1;
+}
+
+.ch-on {
+	background: #1cac78;
+	border: solid;
+	border-width: 2.5px;
+	border-color: #026340;
+}
+
+.ch-on::after {
+	left: 37px;
+}
+
+.table_nthc {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+.th-td_nthc {
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.tr_nthc:nth-child(even) {
+	background-color: #f2f2f2;
+}

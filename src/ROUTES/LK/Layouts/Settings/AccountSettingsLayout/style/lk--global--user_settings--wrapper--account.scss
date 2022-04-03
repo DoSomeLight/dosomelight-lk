@@ -1,0 +1,109 @@
+.lk--global--user_settings--wrapper {
+	&--account {
+		display: flex;
+		background-color: transparent;
+		width: 100%;
+		max-width: 340px;
+		height: 100%;
+		flex-direction: column;
+		margin-inline: 25px;
+
+		&--header {
+			display: flex;
+			background-color: #ffff08;
+			width: 100%;
+			height: 100%;
+			font-size: 24px;
+			text-align: left;
+			flex-direction: row;
+			justify-content: left;
+
+			&--label {
+				display: flex;
+				font-size: 20px;
+				flex-direction: row;
+				justify-content: left;
+				background-color: #ffb000ba;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 15px;
+				border-radius: 5px;
+				padding-inline: 12px;
+			}
+
+			&--save__btn {
+				display: flex;
+				font-size: 20px;
+				flex-direction: column;
+				justify-content: center;
+				background-color: #ffb000ba;
+				margin: 5px;
+				border-radius: 5px;
+				padding-inline: 36px;
+			}
+		}
+
+		&--body {
+			display: block;
+			background-color: #00ff7d;
+			width: 100%;
+			min-height: 100%;
+			height: 100%;
+			flex-direction: column;
+			overflow: auto;
+
+			&--stripe {
+				height: auto;
+				background-color: #1fb259;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				margin: 10px;
+				border-radius: 12px;
+
+				&--wrapper {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+
+					&--row__spacer {
+						display: flex;
+						flex-wrap: wrap;
+						width: 100%;
+						padding: 5px;
+
+						&--label {
+							font-size: 20px;
+							width: 100%;
+							background-color: rgb(199, 255, 216);
+							margin: 1px;
+							padding: 1px;
+							padding-left: 10px;
+							text-align: left;
+							border-width: 1px;
+							border-style: solid;
+							border-radius: 5px;
+							border-color: transparent;
+						}
+
+						&--hint {
+							text-align: left;
+							font-size: 13px;
+							width: 100%;
+							background-color: rgb(60, 250, 117);
+							margin: 1px;
+							padding: 1px;
+							padding-left: 10px;
+							border-width: 1px;
+							border-style: solid;
+							border-radius: 5px;
+							border-color: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}

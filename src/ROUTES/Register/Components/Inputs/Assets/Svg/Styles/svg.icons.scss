@@ -1,0 +1,26 @@
+/* -----
+SVG Icons - mail__svg-icons.sparkk.fr
+----- */
+
+.mail__svg--icon {
+	width: 40px;
+	height: 40px;
+}
+
+.mail__svg--icon path,
+.mail__svg--icon polygon,
+.mail__svg--icon rect {
+	fill: #f700ff;
+}
+
+.mail__svg--icon circle {
+	stroke: #6100d0;
+	stroke-width: 1;
+}
+
+.wrapper--svg--icon {
+	width: 40px;
+	height: 40px;
+	margin-right: -40px;
+	z-index: 1;
+}

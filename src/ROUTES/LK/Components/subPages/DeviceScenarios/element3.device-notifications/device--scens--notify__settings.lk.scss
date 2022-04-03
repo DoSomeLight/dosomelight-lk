@@ -1,0 +1,55 @@
+.device--scens--notify__settings {
+	flex-direction: column;
+	justify-self: start;
+
+	> div {
+	}
+
+	&--lk {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--android {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&--button__div {
+			display: block;
+			margin: 5px;
+		}
+
+		&--warning__text {
+			margin: 5px;
+			background-color: rgb(128, 1, 79);
+			padding: 5px;
+			border: 2px solid rgb(255, 255, 255);
+			border-radius: 5px;
+			text-align: justify;
+			color: rgb(0, 204, 255);
+			font-size: 14px;
+			line-height: 17px;
+			max-width: calc(100vw / 3 - 70px);
+
+			@media (max-width: 950px) {
+				max-width: max-content;
+			}
+		}
+	}
+
+	&--sms {
+		display: flex;
+		flex-direction: column;
+		margin: 5px;
+	}
+}
+
+.display_yes {
+	display: flex;
+}
+
+.display_no {
+	display: none;
+}
