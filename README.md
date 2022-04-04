@@ -10,8 +10,11 @@ It's a web application providing access to personal account for users.
 
 - [How to develop](#installation)
 - [Project structure](./docs/project-structure.md)
-- [About](#about)
+- [Supported smart devices](#supported-smart-devices)
 
 ## How to develop
 
-## About
+## Supported smart devices
+
+- relay
+- two-channel thermostat
