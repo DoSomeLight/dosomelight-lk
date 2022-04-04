@@ -22,7 +22,7 @@ export const _DEV_cookie_MODE = (): COOKIES_DATA => {
 
 	return {
 		account_data: {
-			user_device_system: 'android',
+			user_device_system: 'mobile',
 			user_email: 'user@mail.com',
 			user_name: 'dev_user',
 			user_hash: '123456789',
