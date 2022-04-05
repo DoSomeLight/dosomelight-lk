@@ -1,5 +1,6 @@
 <link href="docs/styles/style.css" rel="stylesheet">
 
+
 # <div style='font-size:32px' align="center">dosomelight-lk</div>
 
 [<div align="right">читать на русском</div>](./README.RU.md)
@@ -12,7 +13,7 @@ It's a web application providing access to personal account for users.
 
 - [How to develop](#how-to-develop-👩‍💻)
      - [1. Fork project](#1--fork-project)
-     - [Notice💡: if using <img style="height:28px;vertical-align:middle" src="./docs/svg/yarn.svg">](#notice💡-if-using-yarn)
+     - [Notice💡: if using <img style="height:22px;vertical-align:middle" src="./docs/svg/yarn.svg">](#notice💡-if-using-yarn)
      - [How to run & debug](#how-to-run--debug-🏂️)
 - [Project structure](./docs/project-structure.md)
 - [Supported smart devices](#supported-smart-devices)
@@ -24,10 +25,9 @@ It's a web application providing access to personal account for users.
 
 ### 1. Fork project
 
-Press button **Fork** and then you'll be in your own copy of dosomelight-lk repo:
-
-<div class='ll'>While on current project page, take the first step:
-fork project!</div>
+ Take the first step: fork project!
+\
+Press button **Fork** and then you'll be in your own copy of dosomelight-lk repo
 
 ![fork-img](/docs/img/fork.png)
 
@@ -37,7 +37,7 @@ fork project!</div>
 
 Clone your forked variant. For example how it looks for me:
 
-<div style='text-align:center'>
+<div align="center">
 
 ![clone-img](/docs/img/clone-img.png)
 
