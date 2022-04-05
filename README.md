@@ -1,3 +1,5 @@
+<link href="docs/styles/style.css" rel="stylesheet">
+
 # <div style='font-size:32px' align="center">dosomelight-lk</div>
 
 [<div align="right">читать на русском</div>](./README.RU.md)
