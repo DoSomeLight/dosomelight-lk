@@ -8,11 +8,11 @@ It's a web application providing access to personal account for users.
 
 ## Table of contents
 
-- [How to develop](#how-to-develop-👩‍💻)
-     - [1. Fork project](#1--fork-project)
-          - [Why do I need to take this step?]()
+- [How to develop](#how-to-develop)
+     - [1. Fork project](#1-fork-project)
+          - [Why do I need to take this step?](#why-do-i-need-to-take-this-step)
      - [2. Clone project](#2-clone-project)
-     - [3. Add submodule var-ts](#3-add-submodule-var-ts)
+     - [3. Add submodule var-ts](#3-add-submodule-vars-ts)
      - [Notice💡: if using <img style="height:22px;vertical-align:middle" src="./docs/svg/yarn.svg">](#notice💡-if-using-yarn)
      - [How to run & debug 👩‍💻](#how-to-run--debug-👩‍💻)
 - [Project structure](./docs/project-structure.md)
