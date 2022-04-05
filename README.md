@@ -10,21 +10,26 @@ It's a web application providing access to personal account for users.
 
 ## Table of contents
 
-- [How to develop](#how-to-develop)
-- [How to use](#how-to-use)
+     - [How to run & debug](#how-to-run--debug-🏂️)
 - [Project structure](./docs/project-structure.md)
 - [Supported smart devices](#supported-smart-devices)
 - [About project](#about-project)
 
 <!-- TODO - [Residential use (personal)](#residential-use-personal) -->
 
-## How to develop
+## How to run & debug 🏂️
 
-coming soon
+```bash
+# if npm:
+npm start # <- to run app in developer mode
+npm build # <- to build static (production mode)
 
-## How to use
+# if yarn:
+yarn start # dev mode
+yarn build # prod mode
 
-coming soon
+yarn run clear # <- to clear all dependencies (lock files, node_modules)
+```
 
 <!-- TODO ### Residential use (personal) -->
 
