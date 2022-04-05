@@ -1,6 +1,3 @@
-<link href="docs/styles/style.css" rel="stylesheet">
-
-
 # <div style='font-size:32px' align="center">dosomelight-lk</div>
 
 [<div align="right">читать на русском</div>](./README.RU.md)
@@ -106,4 +103,3 @@ We figured that it'll be cool to make app which can help us to solve this.
 - relay
 - two-channel thermostat
 
-</link>
