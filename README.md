@@ -105,4 +105,3 @@ We figured that it'll be cool to make app which can help us to solve this.
 
 - relay
 - two-channel thermostat
-
