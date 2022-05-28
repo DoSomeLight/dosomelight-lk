@@ -2,7 +2,7 @@ import Button from '@material-ui/core/Button'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn'
 import AddBoxRoundedIcon from '@material-ui/icons/AddBoxRounded'
-import RegisterData from 'APP/Register/RegisterFunctions'
+import RegisterData from 'app/Register/RegisterFunctions'
 import { SetStateAction } from 'react'
 
 type import_reg_fn = React.Dispatch<SetStateAction<boolean>>

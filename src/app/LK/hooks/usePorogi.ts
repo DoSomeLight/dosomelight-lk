@@ -1,4 +1,4 @@
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 import { useState } from 'react'
 
 export const usePorogi = (device_id: string) => {

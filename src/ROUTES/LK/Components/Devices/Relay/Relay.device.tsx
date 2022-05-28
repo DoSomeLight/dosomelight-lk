@@ -1,9 +1,9 @@
-import { useOnOfflineStatus, useToogleButtonRelay, useDnameONpriborBlock } from 'APP/LK/hooks'
+import { useOnOfflineStatus, useToogleButtonRelay, useDnameONpriborBlock } from 'app/LK/hooks'
 import 'ROUTES/LK/Components/Devices/Assets/styles/button.scss'
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
 import { Ichanged_css_Relay, Ichanged_css_Termo } from 'ROUTES/LK/typings'
 import { Dispatch, SetStateAction } from 'react'
-import { SRelay_Toogle } from 'APP/LK/services/toggle_services/SRelay_Toogle'
+import { SRelay_Toogle } from 'app/LK/services/toggle_services/SRelay_Toogle'
 
 export type IRelay_Toogle = (hook: {
 	changed_css: Ichanged_css_Relay

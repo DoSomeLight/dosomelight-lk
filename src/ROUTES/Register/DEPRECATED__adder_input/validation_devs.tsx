@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from 'react'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import EmojiNatureIcon from '@material-ui/icons/EmojiNature'
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 import validator from 'validator'
 import { ClassNameMap } from '@material-ui/styles'
 import './St.scss'

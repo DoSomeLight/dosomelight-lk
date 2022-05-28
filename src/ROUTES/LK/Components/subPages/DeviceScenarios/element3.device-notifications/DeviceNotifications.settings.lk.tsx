@@ -1,4 +1,4 @@
-import { selectNotifyType } from 'APP'
+import { selectNotifyType } from 'app'
 
 export const DeviceNotification = (props: { _name: string }) => (
 	<div className="device--scens--notify__settings">

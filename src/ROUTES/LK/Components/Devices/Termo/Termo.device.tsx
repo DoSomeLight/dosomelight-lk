@@ -1,10 +1,10 @@
 // import { ITermo_Toogler } from 'ROUTES/Lichniy_Kabinet/Modules/DeviceBlocks.layout.contract'
-import { useOnOfflineStatus, useToogleButtonTermo, useDnameONpriborBlock, useTemperatureDisplay } from 'APP/LK/hooks'
-import { DisplayScensToogler } from 'APP/cssDisplayToogler.global/DisplayScensToogler'
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
+import { useOnOfflineStatus, useToogleButtonTermo, useDnameONpriborBlock, useTemperatureDisplay } from 'app/LK/hooks'
+import { DisplayScensToogler } from 'app/cssDisplayToogler.global/DisplayScensToogler'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
 import { Ichanged_css_Termo } from 'ROUTES/LK/typings'
 import { Dispatch, SetStateAction } from 'react'
-import { STermo_Toogle } from 'APP/LK/services/toggle_services/STermo_Toogle'
+import { STermo_Toogle } from 'app/LK/services/toggle_services/STermo_Toogle'
 
 export type ITermo_Toogler = (hook: {
 	changed_css: Ichanged_css_Termo

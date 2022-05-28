@@ -1,4 +1,4 @@
-import { COOKIES_DATA } from 'APP/vars-ts'
+import { COOKIES_DATA } from 'app/vars-ts'
 import { _DEV_cookie_MODE } from './_DEV_MODE'
 import { _PRODUCTION_MODE as _PROD_cookie_MODE } from './_PROD_MODE'
 

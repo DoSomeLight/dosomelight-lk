@@ -1,5 +1,5 @@
 import './styles/lk--global--user_settings.scss'
-import { ACCOUNT_DATA, DEVICES_DATA } from 'APP/vars-ts'
+import { ACCOUNT_DATA, DEVICES_DATA } from 'app/vars-ts'
 import { AccountSettingsLayout } from 'ROUTES/LK/Layouts/Settings/AccountSettingsLayout/AccountSettingsLayout'
 import { UserInfoLayout } from 'ROUTES/LK/Layouts/UserInfoLayout/UserInfoLayout'
 import { DeviceSettingsLayout } from 'ROUTES/LK/Layouts/Settings/DeviceSettingsLayout/DeviceSettingsLayout'

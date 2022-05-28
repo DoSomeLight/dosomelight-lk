@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
 import { Termo } from 'ROUTES/LK/Components/Devices/Termo/Termo.device'
 import { Relay } from 'ROUTES/LK/Components/Devices/Relay/Relay.device'
 import { Lumen } from 'ROUTES/LK/Components/Devices/Lumen/Lumen.device'

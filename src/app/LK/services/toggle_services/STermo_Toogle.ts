@@ -1,4 +1,4 @@
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 import { SetStateAction } from 'react'
 import { Ichanged_css_Termo } from 'ROUTES/LK/typings'
 

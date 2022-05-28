@@ -1,8 +1,8 @@
 import { SetStateAction, useState } from 'react'
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 // import { IRelay_Toogle } from 'ROUTES/Lichniy_Kabinet/Modules/DeviceBlocks.layout.contract'
-import { DisplayScensToogler } from 'APP/cssDisplayToogler.global/DisplayScensToogler'
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
+import { DisplayScensToogler } from 'app/cssDisplayToogler.global/DisplayScensToogler'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
 // import { Taccount_data } from 'ROUTES/Lichniy_Kabinet/master.Page.Lichniy_Kabinet'
 
 export interface ILumen_Block_props {

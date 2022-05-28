@@ -1,4 +1,4 @@
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
 import { TimeScheduler as PureTimeScheduler } from './TimeScheduler/TimeScheduler.lk'
 import { QuickTimers as PureQuickTimers } from 'ROUTES/LK/Components/subPages/DeviceScenarios/element1.schedules.tabs/QuickTimers/QuickTimers'
 import { Porogi as PurePorogi } from 'ROUTES/LK/Components/subPages/DeviceScenarios/element1.schedules.tabs/Porogi/Porogi.lk'

@@ -1,4 +1,4 @@
-import { DEVICES_DATA } from 'APP/vars-ts'
+import { DEVICES_DATA } from 'app/vars-ts'
 
 import './styles/lk--global--user_settings--wrapper--devices.scss'
 

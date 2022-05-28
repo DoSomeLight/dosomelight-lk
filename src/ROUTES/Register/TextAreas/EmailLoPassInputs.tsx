@@ -4,7 +4,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import InputAdornment from '@material-ui/core/InputAdornment'
 import Email from '@material-ui/icons/Email'
 import validator from 'validator'
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({

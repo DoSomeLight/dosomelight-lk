@@ -1,5 +1,30 @@
 # <div style='font-size:32px' align="center">dosomelight-lk</div>
 
+```bash
+git submodule add git@github.com:DoSomeLight/vars-ts.git src/app/vars-ts
+```
+
+---
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+.
+---
+
+
 [<div align="right">читать на русском</div>](./README.RU.md)
 
 It's a web application providing access to personal account for users.

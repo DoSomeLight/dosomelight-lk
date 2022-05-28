@@ -1,4 +1,4 @@
-import { ACCOUNT_DATA } from 'APP/vars-ts'
+import { ACCOUNT_DATA } from 'app/vars-ts'
 
 import './style/lk--global--user_settings--wrapper--account.scss'
 
