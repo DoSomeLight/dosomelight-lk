@@ -1,5 +1,5 @@
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
-import { DisplayScensToogler } from 'APP/cssDisplayToogler.global/DisplayScensToogler'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
+import { DisplayScensToogler } from 'app/cssDisplayToogler.global/DisplayScensToogler'
 import { ScheduleTabs as PureScheduleTabs } from './element1.schedules.tabs/Schedule.tabs.lk'
 import { Device4account as PureDevice4account } from './element2.device4account/Device4account.settings.lk'
 

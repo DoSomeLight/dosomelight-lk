@@ -1,4 +1,4 @@
-import { ImageLoader as BGRImage } from 'APP/img_loader'
+import { ImageLoader as BGRImage } from 'app/img_loader'
 
 export const BackgroundWrapper = (props: { children: React.ReactNode }) => {
 	return (

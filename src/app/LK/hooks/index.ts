@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { socket } from 'APP/socket.io'
-import { DEVICE_TOOGLE_STATUS } from 'APP/vars-ts'
+import { socket } from 'app/socket.io'
+import { DEVICE_TOOGLE_STATUS } from 'app/vars-ts'
 type DTS = typeof DEVICE_TOOGLE_STATUS.onn
 
 export type OnlineOfflineStatus_data = { onoffline: string; device_id: string }

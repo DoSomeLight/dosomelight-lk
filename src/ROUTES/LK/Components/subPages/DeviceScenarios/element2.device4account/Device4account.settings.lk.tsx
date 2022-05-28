@@ -1,6 +1,6 @@
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
-import { useDnameINscens } from 'APP/LK/hooks'
-import { saveNEW_dname } from 'APP/LK/services/saveNEW_dname'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
+import { useDnameINscens } from 'app/LK/hooks'
+import { saveNEW_dname } from 'app/LK/services/saveNEW_dname'
 import $ from 'jquery'
 import { ChangeEvent } from 'react'
 

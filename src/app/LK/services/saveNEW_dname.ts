@@ -1,4 +1,4 @@
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 
 export type DnameType = string | string[] | number | undefined
 

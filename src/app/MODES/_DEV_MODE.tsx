@@ -1,4 +1,4 @@
-import { COOKIES_DATA, DEVICES_DATA, DEVICE_ONOFFLINE_STATUS, DEVICE_TOOGLE_STATUS, DEVICE_TYPES } from 'APP/vars-ts'
+import { COOKIES_DATA, DEVICES_DATA, DEVICE_ONOFFLINE_STATUS, DEVICE_TOOGLE_STATUS, DEVICE_TYPES } from 'app/vars-ts'
 
 export const _DEV_cookie_MODE = (): COOKIES_DATA => {
 	const device_ids: string[] = ['zxcv1', 'zxcv8', 'zxcv3', 'kl789', 'zxc78', 'zxcv5']

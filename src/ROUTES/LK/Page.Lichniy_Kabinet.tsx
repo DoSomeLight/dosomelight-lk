@@ -4,7 +4,7 @@ import { MAINdiv } from 'ROUTES/LK/Layouts/Body/Background__Wrapper/MAINdiv/MAIN
 
 import { DeviceMapper } from 'ROUTES/LK/Modules/DeviceBlocks.layout.contract'
 import { DeviceScens } from 'ROUTES/LK/Components/subPages/DeviceScenarios/DeviceScens.lk'
-import { AccountContext } from 'APP/contexts/AccountContext'
+import { AccountContext } from 'app/contexts/AccountContext'
 import { UserSettings } from 'ROUTES/LK/Components/subPages/UserSettings/UserSettings'
 import { Header } from 'ROUTES/LK/Components/Header/Header'
 

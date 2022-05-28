@@ -1,8 +1,8 @@
-import { add_btn_schedule } from 'APP'
-import { socket } from 'APP/socket.io'
+import { add_btn_schedule } from 'app'
+import { socket } from 'app/socket.io'
 import $ from 'jquery'
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
-import { useSchedules } from 'APP/LK/hooks/useSchedules'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
+import { useSchedules } from 'app/LK/hooks/useSchedules'
 
 export const TimeScheduler = (props: EACH_DEVICE_PROPS) => {
 	const { device_id, device_cr_id } = props

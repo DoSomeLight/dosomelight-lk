@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { socket } from 'APP/socket.io'
+import { socket } from 'app/socket.io'
 import { counter, AdderInputID } from 'ROUTES/Register/DEPRECATED__adder_input/AdderInputID'
 
 class RegisterData {

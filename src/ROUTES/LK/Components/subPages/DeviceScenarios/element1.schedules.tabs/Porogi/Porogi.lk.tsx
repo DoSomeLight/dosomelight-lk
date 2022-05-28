@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { EACH_DEVICE_PROPS } from 'APP/vars-ts'
-import { usePorogi } from 'APP/LK/hooks/usePorogi'
-import { socket } from 'APP/socket.io'
+import { EACH_DEVICE_PROPS } from 'app/vars-ts'
+import { usePorogi } from 'app/LK/hooks/usePorogi'
+import { socket } from 'app/socket.io'
 import $ from 'jquery'
 
 export const Porogi = (props: EACH_DEVICE_PROPS) => {

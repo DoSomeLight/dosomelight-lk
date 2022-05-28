@@ -1,4 +1,4 @@
-import { toggleDisplay } from 'APP/LK/toggleDisplay'
+import { toggleDisplay } from 'app/LK/toggleDisplay'
 
 export type IGsettings_btn_props = { label_text: string }
 
