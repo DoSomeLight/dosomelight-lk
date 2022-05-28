@@ -1,3 +1,9 @@
 {
-	"recommendations": []
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"ms-vscode.vscode-typescript-next",
+		"gruntfuggly.todo-tree",
+		"arcanis.vscode-zipfs"
+	]
 }
