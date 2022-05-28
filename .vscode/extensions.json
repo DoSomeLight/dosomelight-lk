@@ -1,34 +1,3 @@
 {
-	"recommendations": [
-		"aaron-bond.better-comments",
-		"coenraads.bracket-pair-colorizer-2",
-		"usernamehw.errorlens",
-		"dbaeumer.vscode-eslint",
-		"eamodio.gitlens",
-		"ecmel.vscode-html-css",
-		"wix.vscode-import-cost",
-		"ms-ceintl.vscode-language-pack-ru",
-		"pflannery.vscode-versionlens",
-		"vscode-icons-team.vscode-icons",
-		"mgmcdermott.vscode-language-babel",
-		"alefragnani.bookmarks",
-		"michelemelluso.code-beautifier",
-		"pucelle.vscode-css-navigation",
-		"pranaygp.vscode-css-peek",
-		"nextbook.file-and-folder-icons",
-		"jdinhlife.gruvbox",
-		"zignd.html-css-class-completion",
-		"zhuangtongfa.material-theme",
-		"azemoh.theme-onedark",
-		"azemoh.one-monokai",
-		"christian-kohler.path-intellisense",
-		"gencer.html-slim-scss-css-class-completion",
-		"naumovs.theme-oceanicnext",
-		"enkia.tokyo-night",
-		"daylerees.rainglow",
-		"redhat.vscode-yaml",
-		"arcanis.vscode-zipfs",
-		"esbenp.prettier-vscode",
-		"bierner.github-markdown-preview"
-	]
+	"recommendations": []
 }
