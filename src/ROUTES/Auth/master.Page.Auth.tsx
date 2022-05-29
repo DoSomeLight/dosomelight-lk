@@ -20,3 +20,4 @@ export const AUTH_PAGE = () => (
 		</BackStage>
 	</div>
 )
+
