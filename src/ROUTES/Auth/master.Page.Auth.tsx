@@ -30,31 +30,15 @@ export const AUTH_PAGE = () => (
   <h3 className="sign-in">Авторизация</h3>
 
   <div className="clear"></div>  
-	  <div>
-         <label className="user" htmlFor="text">
-           <svg viewBox="0 0 32 32">
-                    <g filter="">
-                      {/* <use xlink:href="#man-people-user"></use> */}
-                    </g>
-                  </svg>
-         </label>
-        <input className="user-input" type="text" name="name" id="name" placeholder="Ввод имени"  />
-      </div> 
-      <div>
-        <label className="lock" htmlFor="Пароль">
-          <svg viewBox="0 0 32 32">
-             <g filter="">
-               {/* <use xlink:href="#lock-locker"></use> */}
-              </g>
-            </svg>  
-        </label>
-        <input type="password" name="name" id="name" placeholder="" />
-      </div> 
-     <div>
-      <input type="submit" value="Вход" />
-    </div>    
+	<div className='div_in'>
+		 <input type="text" placeholder="Имя"/>
+    </div> 
+	<div className='div_in'>
+		 <input type="password" placeholder="Пароль"/>
+    </div>     
+	<div className='sign_in'> Вход</div>
 	<div className='registr'> Регистрация</div>
-	  <div className="clear"></div>
+	<div className="clear"></div>
 
   </form>  
 </div>
