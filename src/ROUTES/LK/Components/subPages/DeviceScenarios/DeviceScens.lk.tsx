@@ -2,6 +2,7 @@ import { EACH_DEVICE_PROPS } from 'app/vars-ts'
 import { DisplayScensToogler } from 'app/cssDisplayToogler.global/DisplayScensToogler'
 import { ScheduleTabs as PureScheduleTabs } from './element1.schedules.tabs/Schedule.tabs.lk'
 import { Device4account as PureDevice4account } from './element2.device4account/Device4account.settings.lk'
+import './device--scens__plates.scss'
 
 export const DeviceScens = (props: EACH_DEVICE_PROPS) => {
 	const { device_id } = props
@@ -15,14 +16,13 @@ export const DeviceScens = (props: EACH_DEVICE_PROPS) => {
 				display: 'none'
 			}}
 		>
-			<div className={'device--scens__plates'}>
+			<div className="device--scens__plates">
 				<div className="device--scens__plates--inner--header">
 					<div className="device--scens__plates--inner--header--left__buttons">
 						<button>Сохрнаить</button>
 					</div>
 
 					<div className="device--scens__plates--inner--header--right__buttons">
-						COLORS_MAP{' '}
 						<button
 							onClick={() =>
 								DisplayScensToogler(device_id, false)
