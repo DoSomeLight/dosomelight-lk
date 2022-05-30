@@ -23,14 +23,14 @@ export const AUTH_PAGE = () => (
 
 <div className="wrapper">
   <div className="header">
-    <h3 className="sign-in">Sign in</h3>
-    <div className="button">
-      Register
-    </div>
+
   </div>
-   <div className="clear"></div> 
-  <form>
-      <div>
+   
+  <form  className="form_main">
+  <h3 className="sign-in">Авторизация</h3>
+
+  <div className="clear"></div>  
+	  <div>
          <label className="user" htmlFor="text">
            <svg viewBox="0 0 32 32">
                     <g filter="">
@@ -38,10 +38,10 @@ export const AUTH_PAGE = () => (
                     </g>
                   </svg>
          </label>
-        <input className="user-input" type="text" name="name" id="name" placeholder="My name is"  />
+        <input className="user-input" type="text" name="name" id="name" placeholder="Ввод имени"  />
       </div> 
       <div>
-        <label className="lock" htmlFor="password">
+        <label className="lock" htmlFor="Пароль">
           <svg viewBox="0 0 32 32">
              <g filter="">
                {/* <use xlink:href="#lock-locker"></use> */}
@@ -51,18 +51,11 @@ export const AUTH_PAGE = () => (
         <input type="password" name="name" id="name" placeholder="" />
       </div> 
      <div>
-      <input type="submit" value="Sign in" />
-    </div>
-    {/* <div className="radio-check">   
-      <input type="radio" className="radio-no" id="no" name="remember" value="no" checked>
-      <label className="no"><i className="fa fa-times"></i></label>  
-      <input type="radio" className="radio-yes" id="yes" name="remember" value="yes">
-      <label className="yes"><i className="fa fa-check"></i></label>
-      <span className="switch-selection"></span>
-    </div> */}
-      <span className="check-label">Remember me</span>
-      <span className="forgot-label">Lost your password?</span>
-      <div className="clear"></div>
+      <input type="submit" value="Вход" />
+    </div>    
+	<div className='registr'> Регистрация</div>
+	  <div className="clear"></div>
+
   </form>  
 </div>
 
