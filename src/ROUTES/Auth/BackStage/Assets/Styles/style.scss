@@ -41,15 +41,35 @@ html, body {
 }
 
 .wrapper{
-  width:300px; 
+  width:20%; 
   
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   //margin:12% auto;
 }
+.wrapper-left{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: end;
+}
+.wrapper-right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-content: end;
+}
 
-form {position:relative; }
+.form_main {
+    //position:relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
 
 .clear {clear:both;}
 .sign-in {
@@ -63,61 +83,6 @@ form {position:relative; }
   color: #aac8de;	
 }
 }
-// .button {
-//   float:right;
-//   color:#7f8084;
-//   border:1px solid $border;
-//   padding:7px 15px;
-//   border-radius:3px;
-//   font-size:0.8em;
-//   cursor:pointer; 
-// }
-// .button:hover {color:#d3d3d3}
-// .lock {
-//   position:absolute;
-//   width:30px;
-//   height:30px;
-//   margin-top:10px;
-//   padding:7px; 
-//   left:5px;
-//   &::after {
-//     content:""; 
-//     width:1px;
-//     height:30px;
-//     position:absolute;
-//     background:$border; 
-//     top:0px; 
-//     left:100%; 
-//   }
-// }
-// .user {
- 
-//   position:absolute;
-//   width:30px;
-//   height:30px;
-//   margin-top:10px;
-//   padding:7px;
-//   left:5px;
-//   &::after {
-//     content:""; 
-//     width:1px;
-//     height:30px;
-//     position:absolute;
-//     background:$border; 
-//     top:0px; 
-//     left:100%; 
-//   }
-// }
-
-// input {
-//   width:100%;
-//   padding:5px;
-//   height:40px;
-//   border-radius:3px;
-//   margin:5px 0;
-//   outline: none;
-//   background:transparent; 
-// }
 
 .sign_in {
     &::before{
@@ -133,6 +98,7 @@ form {position:relative; }
         opacity: 0;
         box-sizing: border-box;	
     }
+    align-content:flex-start;
     width:100%;    
 	text-transform: uppercase;
     border-radius: 3px;
@@ -147,7 +113,7 @@ form {position:relative; }
     border-image-slice: 1;
     margin-top: 5%;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     overflow: hidden;
     letter-spacing: 2px;
     transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -262,10 +228,11 @@ form {position:relative; }
 		}
 }
 .div_in{
- // margin-top: 50%;
+width: 100%;
 }
 .div_in input[type=text]{
    
+    
     width:100%;
     height: auto;    
     text-transform: uppercase;
