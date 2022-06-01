@@ -8,7 +8,7 @@ export const MainInputs: IMainInputs = ({ main_input_type, SvgImage }) => {
 	let [value, setValue] = useState('')
 	return (
 		<div id={`wrapper--input__svg--${main_input_type}`} className="register--wrapper--input-svg">
-			{SvgImage}
+			{/* {SvgImage} */}
 			<input
 				className="register--input__component"
 				type={main_input_type}

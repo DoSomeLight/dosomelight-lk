@@ -1,12 +1,35 @@
 .register {
 	&--input__component {
-		color: black;
-		font-size: 20px;
-		border-radius: 8px;
-		border-color: blue;
-		border-style: solid;
-		border-width: 3px;
-		padding-left: 38px;
+		// color: black;
+		// font-size: 20px;
+		// border-radius: 8px;
+		// border-color: blue;
+		// border-style: solid;
+		// border-width: 3px;
+		// padding-left: 38px;
+
+		width: 100%;
+		height: auto;
+		text-transform: uppercase;
+		border-radius: 3px;
+		font-size: 0.8em;
+		text-decoration: none;
+		color: #ffffff;
+		display: inline-block;
+		position: relative;
+		padding: 7px 10px;
+		border: 2px solid;
+		border-image: linear-gradient(180deg, #bfa3e7, #ad8cdd, #7a55ad, #391072);
+		border-image-slice: 1;
+		margin-top: 5%;
+		font-family: "Montserrat", sans-serif;
+		font-size: 12px;
+		overflow: hidden;
+		letter-spacing: 2px;
+		transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+		background: transparent;
+		text-align: left;
+		text-shadow: 1px 1px 1px #3c196d;
 	}
 
 	&--wrapper {
