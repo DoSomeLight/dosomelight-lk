@@ -7,5 +7,58 @@
 	"eslint.nodePath": ".yarn/sdks",
 	"prettier.prettierPath": ".yarn/sdks/prettier/index.js",
 	"typescript.tsdk": ".yarn/sdks/typescript/lib",
-	"typescript.enablePromptUseWorkspaceTsdk": true
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+
+	"todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]", "INFO", "FIX"],
+	"todo-tree.general.tagGroups": {
+		"FIXME": ["FIXME", "FIXIT", "FIX"]
+	},
+	"todo-tree.tree.showBadges": true,
+	"todo-tree.tree.showCountsInTree": true,
+	"todo-tree.highlights.customHighlight": {
+		"TODO": {
+			"iconColour": "#b907ff",
+			"gutterIcon": true,
+			"foreground": "white",
+			"background": "#b907ff"
+			// "icon": "check",
+		},
+		"FIXME": {
+			"icon": "flame",
+			"foreground": "black",
+			"background": "#ff0000",
+			"iconColour": "red",
+			"gutterIcon": true
+		},
+		"BUG": {
+			"foreground": "white",
+			"background": "#9e0500",
+			"iconColour": "#9e0500",
+			"gutterIcon": true
+		},
+
+		// todo not yet
+		"[ ]": {
+			"iconColour": "#d10000bb",
+			"icon": "tasklist",
+			"gutterIcon": true,
+			"foreground": "#d10101a8",
+			"background": "#ff000080"
+		},
+
+		// todo done
+		"[x]": {
+			"icon": "tasklist",
+			"gutterIcon": true,
+			"iconColour": "#07be07",
+			"background": "#00ff0080"
+		},
+		"INFO": {
+			"icon": "info",
+			"foreground": "#ffffff",
+			"background": "#0004ff",
+			"iconColour": "#0088d6",
+			"gutterIcon": true
+		}
+	}
 }
