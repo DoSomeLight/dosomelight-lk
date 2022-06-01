@@ -1,7 +1,7 @@
 /* INFO Задний фон главной стр */
 .lk--background__wrapper {
-	background: linear-gradient(rgba(21, 2, 2, 0.672), rgba(0, 0, 0, 0.5)), url("../Img/background/back_blur.jpg");
-
+	//background: linear-gradient(rgba(21, 2, 2, 0.672), rgba(0, 0, 0, 0.5)), url("../Img/background/back_blur.jpg");
+	background: linear-gradient(to top, #fcfab3e5 0%, #82cbff 100%);
 	background-repeat: no-repeat;
 	flex-direction: column;
 	background-size: cover;
