@@ -2,9 +2,9 @@
 
 # DSL Frontend TODO.md
 
-## TODO📌
+## TOD/O📌
 
-- [ ] jhhjjh
+- [ //] jhhjjh
 
 <!-- |   TODO📌   | In Progress 🛠️ |    Done ✔️ |
 | :--------: | :------------: | ---------: |
@@ -12,10 +12,10 @@
 | git status |   git status   | git status |
 |  git diff  |    git diff    |   git diff | -->
 
-- [ ] awdawdadawd
+- [ //] awdawdadawd
 
 ## Done! ✅
 
-- [x] jhhjjh
+- [x//] jhhjjh
 
-- [x] awdawdadawd
+- [x//] awdawdadawd
