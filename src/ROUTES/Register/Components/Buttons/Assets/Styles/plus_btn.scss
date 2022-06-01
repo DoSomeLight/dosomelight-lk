@@ -1,6 +1,25 @@
 .plus_btn {
-	display: flex;
-	width: 200px;
-	height: 50px;
-	background-color: blue;
+	// display: flex;
+	// width: 200px;
+	// height: 50px;
+	// background-color: blue;
+
+	width: 100%;
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #3c196d;
+	display: inline-block;
+	position: relative;
+	padding: 7px 10px;
+	border: 2px solid;
+	border-image: linear-gradient(180deg, #bfa3e7, #ad8cdd, #7a55ad, #391072);
+	border-image-slice: 1;
+	margin-top: 5%;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	overflow: hidden;
+	letter-spacing: 2px;
+	transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
