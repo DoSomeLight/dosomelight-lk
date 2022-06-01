@@ -7,6 +7,7 @@ import { SettingsFinderLayout } from 'ROUTES/LK/Layouts/Settings/SettingsFinderL
 
 type TUserSettings = { (props: { account_data: ACCOUNT_DATA; devices_data: DEVICES_DATA }): JSX.Element }
 
+//INFO Окно настроек (ЛК)
 export const UserSettings: TUserSettings = ({ account_data, devices_data }) => (
 	<div
 		id="global--user_settings"
