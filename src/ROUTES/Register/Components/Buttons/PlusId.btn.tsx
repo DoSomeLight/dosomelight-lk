@@ -20,6 +20,6 @@ export const PlusIdBtn: IPlusIdBtn = ({ plus_value, changedMass, counter_pp }) =
 				_changedMass.push('')
 				plus_value(_changedMass)
 			}}
-		/>
+		>добавить ID</div>
 	)
 }
