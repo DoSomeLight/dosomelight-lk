@@ -5,11 +5,15 @@ export interface IMainInputs {
 }
 
 export const MainInputs: IMainInputs = ({ main_input_type, SvgImage }) => {
+	const isEmail = main_input_type === 'email'
+	const isLogin = main_input_type === 'login'
+	const isPassword = main_input_type === 'password'
 	let [value, setValue] = useState('')
 	return (
 		<div id={`wrapper--input__svg--${main_input_type}`} className="register--wrapper--input-svg">
 			{/* {SvgImage} */}
 			<input
+				placeholder={isEmail ? 'email' : isLogin ? 'login' : 'password'}
 				className="register--input__component"
 				type={main_input_type}
 				name={`${main_input_type}-input`}

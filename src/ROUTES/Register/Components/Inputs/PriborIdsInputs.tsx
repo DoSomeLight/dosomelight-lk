@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import { Dispatch, SetStateAction, useState } from 'react'
 import './Assets/Styles/styles.scss'
+import './input__pii.scss'
+import './id_input_item.scss'
 
 export interface IPriborIdsInput {
 	(props: {
@@ -17,7 +19,7 @@ export const PriborIdsInput: IPriborIdsInput = ({ _value, id, Del_btn, index, ch
 	let [__value, change_local_value] = useState('')
 	const Value = __value === '' ? _value : __value
 	return (
-		<div id={`pii_${index}`}>
+		<div id={`pii_${index}`} className="id_input_item">
 			<input
 				key={index}
 				id={`input__${index}`}

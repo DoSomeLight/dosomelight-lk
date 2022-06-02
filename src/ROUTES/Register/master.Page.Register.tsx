@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-pascal-case */
 import './Assets/Styles/master.page.register.scss'
+import './reg-btn.scss'
 import { Header } from 'ROUTES/Register/Components/Header/Header'
 import { MainInputs_Contract } from './Modules/MainInputs.contract'
 import { PriborIdsInputs_Contract } from './Modules/PriborIdsInputs.contract'
@@ -24,6 +25,7 @@ export const REGISTER_PAGE = () => {
 						>
 							{PlusId_Btn}
 							{Pribor_ids_inputs}
+							<div className="reg-btn">Зарегистрировать</div>
 							{/* <div id='plus_btn' />
               <div id='pribor_ids--inputs'></div> */}
 						</div>
