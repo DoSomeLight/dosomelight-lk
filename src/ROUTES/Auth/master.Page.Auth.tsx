@@ -1,3 +1,5 @@
+import './style.scss'
+
 export const AUTH_PAGE = () => (
 	<div className="wrapper">
 		<form className="form_main">
