@@ -1,4 +1,6 @@
-import './auth-styles.scss'
+import './styles/auth-styles.scss'
+import './styles/auth--btn_small.scss'
+import './styles/auth--submit_btn.scss'
 
 export const AUTH_PAGE = () => (
 	<div className="auth--wrapper">
