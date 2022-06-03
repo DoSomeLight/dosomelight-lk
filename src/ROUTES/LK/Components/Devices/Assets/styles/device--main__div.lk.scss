@@ -22,7 +22,7 @@
 
 	&--parts {
 		display: block;
-		background-color: #69d4c069;
+		background-color: #55b6fc93;
 		color: white;
 		padding: 12px;
 		width: 165px;
@@ -82,13 +82,13 @@
 		height: 32px;
 		background-size: 100%;
 		border-radius: 8px;
-		border-color: rgb(0, 93, 130);
+		border-color: #fbdf8c;
 		border-style: solid;
-		border-width: 5px;
+		border-width: 4px;
 		display: block;
 
 		&:hover {
-			border-color: rgb(255, 0, 200);
+			border-color: #179af8dc;
 		}
 	}
 
