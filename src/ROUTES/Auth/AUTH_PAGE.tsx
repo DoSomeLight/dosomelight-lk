@@ -18,7 +18,7 @@ export const AUTH_PAGE = () => (
 			<div className="auth--wrapper--form--submit_btn"> Вход</div>
 
 			<div className="auth--wrapper--form--align_right">
-				<div className="registr"> Регистрация</div>
+				<div className="auth--btn_small"> Регистрация</div>
 			</div>
 
 			<div className="clear"></div>
