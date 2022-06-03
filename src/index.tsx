@@ -2,7 +2,7 @@ import registerServiceWorker from './serviceWorker'
 import ReactDOM from 'react-dom'
 import 'assets/styles/index.scss'
 import { LICHNIY_KABINET } from 'ROUTES/LK/Page.Lichniy_Kabinet'
-import { AUTH_PAGE } from 'ROUTES/Auth/master.Page.Auth'
+import { AUTH_PAGE } from 'ROUTES/Auth/AUTH_PAGE'
 import { REGISTER_PAGE } from 'ROUTES/Register/master.Page.Register'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 

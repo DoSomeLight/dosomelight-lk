@@ -1,30 +1,27 @@
-@import 'ROUTES/Auth/BackStage/Assets/Styles/style.scss';
-@import 'ROUTES/Auth/Assets/Styles/labels.scss';
-@import 'ROUTES/Auth/Buttons/Assets/Styles/style.scss';
-@import 'ROUTES/Auth/TextInputs/Assets/Styles/style.scss';
+@import "ROUTES/Register/style.scss";
 
-@import 'ROUTES/Register/style.scss';
-
-@import 'ROUTES/LK/Assets/Styles/styles.lk.scss';
-@import 'ROUTES/LK/Components/Footer/lk--footer.scss';
-@import 'ROUTES/LK/Components/Devices/Assets/styles/device--main__div.lk.scss';
+@import "ROUTES/LK/Assets/Styles/styles.lk.scss";
+@import "ROUTES/LK/Components/Footer/lk--footer.scss";
+@import "ROUTES/LK/Components/Devices/Assets/styles/device--main__div.lk.scss";
 // @import 'ROUTES/LK/Components/subPages/DeviceScenarios/device--scens__plates.scss';
 // @import 'ROUTES/LK/Components/subPages/DeviceScenarios/element1.schedules.tabs/element1--tabs--schedules.scss';
 // @import 'ROUTES/LK/Components/subPages/DeviceScenarios/element3.device-notifications/device--scens--notify__settings.lk.scss';
-@import 'ROUTES/LK/Components/Devices/Assets/styles/button.scss';
-@import 'ROUTES/LK/Components/Devices/Assets/styles/lumen.scss';
+@import "ROUTES/LK/Components/Devices/Assets/styles/button.scss";
+@import "ROUTES/LK/Components/Devices/Assets/styles/lumen.scss";
 
+html,
 body {
+	background: linear-gradient(to top, #fbdf8c 0%, #af95d3 100%);
 	height: 100%;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 ul {

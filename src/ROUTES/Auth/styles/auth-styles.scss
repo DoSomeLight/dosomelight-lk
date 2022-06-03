@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+$bg: #1a1f25;
+$button: #e6b333;
+$border: #22272d;
+
+.auth {
+    // обертка формы
+    &--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+
+        // стиль формы
+        &--form {
+            //position:relative;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            // "Авторизация"
+            &--label {
+                float: left;
+                color: #ffffff;
+                font-size: 1.3em;
+                // margin-top: 50%;
+                text-shadow: 1px 1px 1px #3c196d;
+                //border:1px solid rgb(99, 12, 165);
+                &:hover {
+                    color: #aac8de;
+                }
+            }
+
+            // стиль выравнивания влево
+            &--align_left {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-content: end;
+            }
+
+            &--align_right {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+                align-content: end;
+            }
+
+            // обертка инпутов
+            &--input_wrapper {
+                width: 100%;
+
+                // стили инпутов (логин,пароль)
+                & > * {
+                    width: 100%;
+                    height: auto;
+                    text-transform: uppercase;
+                    border-radius: 3px;
+                    font-size: 0.8em;
+                    text-decoration: none;
+                    color: transparent;
+                    display: inline-block;
+                    position: relative;
+                    padding: 7px 10px;
+                    border: 2px solid;
+                    border-image: linear-gradient(180deg, #bfa3e7, #ad8cdd, #7a55ad, #391072);
+                    border-image-slice: 1;
+                    margin-top: 5%;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 12px;
+                    overflow: hidden;
+                    letter-spacing: 2px;
+                    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    background: transparent;
+                    text-align: left;
+                    text-shadow: 1px 1px 1px #3c196d;
+
+                    &:hover {
+                        background: #aac8de;
+                    }
+                }
+            }
+        }
+    }
+}

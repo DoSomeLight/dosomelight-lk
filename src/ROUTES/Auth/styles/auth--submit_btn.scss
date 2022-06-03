@@ -1,0 +1,76 @@
+.auth--submit_btn {
+    &::before {
+        bottom: 0;
+        left: 0;
+        border-left: 2px solid #78acd1;
+        border-top: 2px solid #5ba0d1;
+        transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+    align-content: flex-start;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #3c196d;
+    display: inline-block;
+    position: relative;
+    padding: 7px 10px;
+    border: 2px solid;
+    border-image: linear-gradient(180deg, #bfa3e7, #ad8cdd, #7a55ad, #391072);
+    border-image-slice: 1;
+    margin-top: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &::after {
+        top: 0;
+        right: 0;
+        border-right: 2px solid #477a9e;
+        border-bottom: 2px solid #174667;
+        transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    &:hover {
+        &::after {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
+        }
+    }
+
+    &:hover {
+        &::before {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
+        }
+    }
+
+    &:hover {
+        background: #aac8de;
+    }
+
+    > * {
+        flex-wrap: wrap;
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+    }
+}
