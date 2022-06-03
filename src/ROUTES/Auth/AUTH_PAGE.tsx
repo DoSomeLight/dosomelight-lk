@@ -17,7 +17,7 @@ export const AUTH_PAGE = () => (
 				<input type="password" placeholder="Пароль" />
 			</div>
 
-			<div className="auth--wrapper--form--submit_btn"> Вход</div>
+			<div className="auth--submit_btn"> Вход</div>
 
 			<div className="auth--wrapper--form--align_right">
 				<div className="auth--btn_small"> Регистрация</div>
