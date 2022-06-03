@@ -4,7 +4,7 @@ export const AUTH_PAGE = () => (
 	<div className="auth--wrapper">
 		<form className="auth--wrapper--form">
 			<div className="auth--wrapper--form--align_left">
-				<h3 className="sign-in">Авторизация</h3>
+				<div className="auth--wrapper--form--label">Авторизация</div>
 			</div>
 
 			<div className="auth--wrapper--form--input_wrapper">
