@@ -2,16 +2,17 @@
 	display: flex;
     flex-direction: row;
     width: 100%;
-    height: 48px;
+    height: 10%;
     background-color: #477A9E;
     justify-content: space-between;
 
 	&--header_logo {
+		margin-top: 5px;
 		display: flex;
-		background: url('../../../../../../assets/img/DSL_logo.png');
+		background: url('../../../../../../assets/img/DSL_logo3.png');
 		background-size: contain;
 		background-repeat: no-repeat;
-		width: 60px;
-		height: 60px;
+		width: 10%;
+		height: 55px;
 	}
 }
