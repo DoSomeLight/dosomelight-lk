@@ -1,4 +1,4 @@
-import './style.scss'
+import './auth-styles.scss'
 
 export const AUTH_PAGE = () => (
 	<div className="wrapper">
