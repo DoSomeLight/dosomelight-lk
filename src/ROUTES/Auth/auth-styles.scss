@@ -21,17 +21,8 @@ $bg: #1a1f25;
 $button: #e6b333;
 $border: #22272d;
 
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
+.auth {
 
-html,
-body {
-    background: linear-gradient(to top, #fbdf8c 0%, #af95d3 100%);
-    height: 100%;
-    font-family: "Roboto", sans-serif;
 }
 
 .clear {

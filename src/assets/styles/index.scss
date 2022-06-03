@@ -9,7 +9,9 @@
 @import "ROUTES/LK/Components/Devices/Assets/styles/button.scss";
 @import "ROUTES/LK/Components/Devices/Assets/styles/lumen.scss";
 
+html,
 body {
+	background: linear-gradient(to top, #fbdf8c 0%, #af95d3 100%);
 	height: 100%;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
