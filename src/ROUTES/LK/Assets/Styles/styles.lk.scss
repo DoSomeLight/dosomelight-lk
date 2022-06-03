@@ -1210,14 +1210,14 @@ img.logo-image {
 	/* высота */
 	border-radius: 19px;
 	/* радиус скругления */
-	background: #bfbfbf;
+	//background: #bfbfbf;
 	/* цвет фона */
 	z-index: 0;
 	margin: 0;
 	padding: 0;
 	border: solid;
 	border-width: 2.5px;
-	border-color: #65706c;
+	border-color: #fbdf8c;
 	cursor: pointer;
 	position: relative;
 	transition-duration: 150ms;
@@ -1245,10 +1245,10 @@ img.logo-image {
 }
 
 .switch-on {
-	background: #1cac78;
+	background: #477A9E;
 	border: solid;
 	border-width: 2.5px;
-	border-color: #026340;
+	border-color: #67c0ff;
 }
 
 .switch-on::after {
