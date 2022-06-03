@@ -290,3 +290,10 @@ body {
         background: #aac8de;
     }
 }
+
+.formInput--auth {
+    flex-direction: column;
+    height: 30px;
+    display: flex;
+    align-self: center;
+}
