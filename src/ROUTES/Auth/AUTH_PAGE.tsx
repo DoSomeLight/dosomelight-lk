@@ -1,25 +1,23 @@
 import './auth-styles.scss'
 
 export const AUTH_PAGE = () => (
-	<div className="wrapper">
-		<form className="form_main">
-			<div className="wrapper-left">
+	<div className="auth--wrapper">
+		<form className="auth--wrapper--form">
+			<div className="auth--wrapper--form--align_left">
 				<h3 className="sign-in">Авторизация</h3>
 			</div>
 
-			<div className="clear"></div>
-
-			<div className="div_in">
+			<div className="auth--wrapper--form--input_wrapper">
 				<input type="text" placeholder="Имя" />
 			</div>
 
-			<div className="div_in">
+			<div className="auth--wrapper--form--input_wrapper">
 				<input type="password" placeholder="Пароль" />
 			</div>
 
-			<div className="sign_in"> Вход</div>
+			<div className="auth--wrapper--form--submit_btn"> Вход</div>
 
-			<div className="wrapper-right">
+			<div className="auth--wrapper--form--align_right">
 				<div className="registr"> Регистрация</div>
 			</div>
 
