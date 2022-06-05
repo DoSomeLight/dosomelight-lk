@@ -4,20 +4,27 @@ import './styles/auth--submit_btn.scss'
 
 export const AUTH_PAGE = () => (
 	<div className="auth--wrapper">
-		<form className="auth--wrapper--form">
+		<form id="vhod" method="POST" className="auth--wrapper--form">
 			<div className="auth--wrapper--form--align_left">
 				<div className="auth--wrapper--form--label">Авторизация</div>
 			</div>
 
 			<div className="auth--wrapper--form--input_wrapper">
-				<input type="text" placeholder="Имя" />
+				<input id="login" type="text" placeholder="Имя" />
 			</div>
 
 			<div className="auth--wrapper--form--input_wrapper">
-				<input type="password" placeholder="Пароль" />
+				<input id="password" type="password" placeholder="Пароль" />
 			</div>
 
-			<div className="auth--submit_btn"> Вход</div>
+			<input
+				id="submit-btn"
+				name="submit-btn"
+				type="submit"
+				form="vhod"
+				className="auth--submit_btn"
+				value={'Вход'}
+			/>
 
 			<div className="auth--wrapper--form--align_right">
 				<div className="auth--btn_small"> Регистрация</div>
