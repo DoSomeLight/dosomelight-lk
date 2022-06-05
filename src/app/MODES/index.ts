@@ -7,8 +7,9 @@ export const NODE_ENV = process.env.NODE_ENV,
 
 export const get_COOKIE_DATA = (): COOKIES_DATA => {
 	console.dir(_PROD_cookie_MODE())
-	return _DEV_cookie_MODE()
+	return PRODUCTION ? (_PROD_cookie_MODE() ? _PROD_cookie_MODE() : _DEV_cookie_MODE()) : _DEV_cookie_MODE()
+
+	// return _DEV_cookie_MODE()
 }
-// PRODUCTION ? (_PROD_cookie_MODE() ? _PROD_cookie_MODE() : _DEV_cookie_MODE()) : _DEV_cookie_MODE()
 
 //(PRODUCTION ? _PROD_cookie_MODE() : _DEV_cookie_MODE())
