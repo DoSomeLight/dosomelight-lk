@@ -10,11 +10,11 @@ export const AUTH_PAGE = () => (
 			</div>
 
 			<div className="auth--wrapper--form--input_wrapper">
-				<input id="login" type="text" placeholder="Имя" />
+				<input id="login" name="login" type="text" placeholder="Имя" />
 			</div>
 
 			<div className="auth--wrapper--form--input_wrapper">
-				<input id="password" type="password" placeholder="Пароль" />
+				<input id="password" name="password" type="password" placeholder="Пароль" />
 			</div>
 
 			<input
