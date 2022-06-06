@@ -34,7 +34,7 @@ class RegisterData {
 		socket.emit('all_inputs_validation', inputValues)
 		console.table(inputValues)
 		console.dir('trying to check register')
-		is_ready_for_reg ? cb(is_ready_for_reg) : console.dir('not ready')
+		// is_ready_for_reg ? cb(is_ready_for_reg) : console.dir('not ready')
 	}
 }
 
