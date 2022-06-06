@@ -1,18 +1,18 @@
 .settings__finder__layout {
-	display: flex;
-	width: 100%;
-	height: auto;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #abab06;
-	padding: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #669fcb;
+    padding: 10px;
 
 	&--header {
 		display: flex;
-		background-color: #686807;
+		background-color: #3a6c93;
 		font-size: 16px;
-		color: #ffff0f;
+		color: #ffffff;
 		padding-inline: 5px;
 		border-radius: 5px 5px 0px 0px;
 	}
@@ -20,7 +20,7 @@
 	&--topic__wrapper {
 		display: flex;
 		flex-direction: row;
-		background-color: #ffff0f;
+		background-color: #9cd1ed;
 		height: -moz-fit-content;
 		height: auto;
 		width: auto;
@@ -31,14 +31,14 @@
 		align-content: center;
 		align-items: center;
 		flex: auto;
-
 		&--link {
-			background-color: #ffc609;
+			background-color: #efeb8a;
 			margin: 5px;
 			margin-inline: 10px;
-			border-radius: 2px;
+			border-radius: 14px;
 			width: max-content;
-			padding-inline: 6px;
+			padding-inline: 8px;
+			color: #295a83;
 		}
 	}
 }

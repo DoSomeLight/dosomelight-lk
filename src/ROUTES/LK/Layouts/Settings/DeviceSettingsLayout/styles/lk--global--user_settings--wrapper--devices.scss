@@ -9,7 +9,7 @@
 
 		&--header {
 			display: flex;
-			background-color: #ffff08;
+			background-color: #f9f496;
 			width: 100%;
 			height: auto;
 			font-size: 24px;
@@ -20,7 +20,7 @@
 
 		&--body {
 			display: block;
-			background-color: #00ff7d;
+			background-color: #6da6d5;
 			width: 100%;
 			min-height: 90%;
 			height: 100%;
@@ -30,7 +30,7 @@
 			&--table {
 				display: flex;
 				flex-direction: column;
-				background-color: #26b45e;
+				background-color: #f7f197e8;
 				margin: 10px;
 				border-radius: 10px;
 
@@ -51,8 +51,8 @@
 						text-align: center;
 						justify-content: left;
 						padding-inline: 5px;
-						background-color: #c8ffd9;
-						border-radius: 12px 12px 0px 0px;
+						background-color: #c5eaff;
+						border-radius: 12px 12px 0px 0px;	
 					}
 
 					&--info {
@@ -63,16 +63,16 @@
 						text-align: center;
 						justify-content: left;
 						padding-inline: 5px;
-						background-color: #62db92;
+						background-color: #9ccfeb;
 						border-radius: 0px 0px 12px 12px;
-						border-color: #ffff0f;
+						border-color: #f7f197;
 						border-width: 2px;
 
 						& > div {
 							font-size: 16px;
 							display: flex;
 							flex-direction: column;
-							background-color: #bdffb9;
+							background-color: #f7f197;
 							padding-inline: 8px;
 							margin-inline: 2px;
 							border-radius: 8px;
