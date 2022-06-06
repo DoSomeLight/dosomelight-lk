@@ -5,6 +5,7 @@ import { Header } from 'ROUTES/Register/Components/Header/Header'
 import { MainInputs_Contract } from './Modules/MainInputs.contract'
 import { PriborIdsInputs_Contract } from './Modules/PriborIdsInputs.contract'
 import { PlusIdBtn } from './Components/Buttons/PlusId.btn'
+import REG from 'app/Register/RegisterFunctions'
 
 export const REGISTER_PAGE = () => {
 	let { Inputs, Pribor_ids_inputs, PlusId_Btn } = Register_Contracts()
@@ -25,7 +26,19 @@ export const REGISTER_PAGE = () => {
 						>
 							{PlusId_Btn}
 							{Pribor_ids_inputs}
-							<div className="reg-btn">Зарегистрировать</div>
+							<div
+								onClick={() => {
+									REG.check_N_sendToRegister(
+										isReady4Reg =>
+											console.dir(
+												isReady4Reg
+											)
+									)
+								}}
+								className="reg-btn"
+							>
+								Зарегистрировать
+							</div>
 							{/* <div id='plus_btn' />
               <div id='pribor_ids--inputs'></div> */}
 						</div>
