@@ -4,7 +4,7 @@
 	width: 100%;
 	flex-direction: row;
 	justify-content: space-around;
-	background-color: #abab06;
+	background-color: #669fcb;
 	padding-top: 10px;
 	padding-bottom: 10px;
 
@@ -13,7 +13,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #08ff81;
+		background-color: #9cd1ed;
 		border-radius: 38px;
 	}
 
@@ -22,17 +22,18 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: #ffff08;
+		background-color: #9cd1ed;
 		border-radius: 10px;
 		padding-inline: 10px;
+		color: #16466d;
 
 		&--value {
 			display: flex;
-			background-color: #adad0d;
+			background-color: #efeb8a;
 			margin-inline: 5px;
 			padding-inline: 5px;
 			border-radius: 5px;
-			color: #ffff08;
+			color: #295a83;
 			font-weight: bold;
 			font-size: 16px;
 		}
