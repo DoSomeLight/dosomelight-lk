@@ -23,7 +23,7 @@ export const LICHNIY_KABINET = () => (
 						<DeviceMapper {...edp} />
 					))}
 				</MAINdiv>
-				<FooterLK />
+				{/* <FooterLK /> */}
 			</BackgroundWrapper>
 		)}
 	</AccountContext.Consumer>
